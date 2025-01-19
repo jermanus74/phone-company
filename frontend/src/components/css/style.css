@@ -1,0 +1,74 @@
+/* Navbar.css */
+
+/* Main navbar container */
+.navbar-container {
+  background-color: white;
+  transition-duration: 0.4s;
+  position: relative;
+  z-index: 40;
+}
+
+.navbar-dark {
+  background-color: #1f2937; /* Dark background */
+  color: white;
+}
+
+/* Navbar inner padding */
+.navbar-inner {
+  padding: 1rem 0;
+}
+
+/* Flex container for logo and menu */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: space-between; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for the brand name */
+.navbar-logo {
+  font-size: 2rem;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1e40af; /* Blue color */
+}
+
+/* Menu items container */
+.navbar-menu {
+  display: none; /* Hide by default */
+}
+
+/* Menu links in large screens */
+.navbar-menu-lg {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Styling for each menu link */
+.navbar-link {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  font-weight: 600;
+  color: #6b7280; /* Gray color */
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: black;
+}
+
+.navbar-link-dark:hover {
+  color: white;
+}
+
+/* Media Query for large screens */
+@media (min-width: 1024px) {
+  .navbar-menu {
+    display: block; /* Show on large screens */
+  }
+}
