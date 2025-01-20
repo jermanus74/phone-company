@@ -1,8 +1,8 @@
 // import "./css/Navbar.css";
 import { IoMdSearch } from "react-icons/io";
-import { FaCaretDown, FaShoppingCart, FaUser } from "react-icons/fa";
+import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./DarkMode";
-<FaUser />;
+
 // menu array
 const MenuLinks = [
   { id: 1, link: "#", name: "Home" },
@@ -38,13 +38,14 @@ export const Navbar = () => {
               href="#"
               className="text-brandBlue font-helvetica 
               text-2xl tracking-widest font-semibold
-               uppercase sm:text-3xl"
+               uppercase sm:text-3xl
+               dark:text-white"
             >
               samsung
             </a>
             {/* menu items */}
             <div className="hidden lg:block">
-              <ul className="flex items-center gap-4">
+              <ul className="flex items-center gap-2">
                 {MenuLinks.map((data, index) => (
                   <li key={index}>
                     <a
