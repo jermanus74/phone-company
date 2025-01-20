@@ -1,8 +1,6 @@
 // import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
 import { Navbar } from "./components/navbar/Navbar";
-import { Footer } from "./components/Footer/Footer";
-import { Hero } from "./components/Hero/Hero";
 import { Category } from "./components/categories/Category";
 import { Category2 } from "./components/categories/Category2";
 import { Services } from "./components/services/Services";
@@ -11,6 +9,8 @@ import phone from "./assets/hero-img/galaxy-z-flip6.png";
 import { Products } from "./components/products/Products";
 import { Blog } from "./components/blog/Blog";
 import { Partner } from "./components/partner/Partner";
+import { Hero } from "./components/hero/Hero";
+import { Footer } from "./components/Footer/Footer";
 
 const bannerData = {
   discount: "30% OFF",
@@ -36,7 +36,7 @@ const bannerData2 = {
 };
 function App() {
   return (
-    <div className="bg-white dark:bg-gray-700 dark:text-white overflow-hidden duration-200">
+    <div className="custom-container">
       <Navbar />
       <Hero />
       <Category />
