@@ -26,8 +26,12 @@ export const Banner = ({ data }) => {
             <p className="text-sm">{data.date}</p>
           </div>
           {/* second col */}
-          <div>
-            <img src={data.image} className="h-full flex items-center" />
+          <div className="h-full flex items-center">
+            <img
+              src={data.image}
+              className="scale-120 w-[250px] md:w-[350px] mx-auto 
+              drop-shadow-2xl object-cover  "
+            />
           </div>
           {/* third col */}
         </div>
