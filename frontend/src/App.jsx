@@ -9,6 +9,7 @@ import { Category2 } from "./components/categories/Category2";
 import { Services } from "./components/services/Services";
 import { Banner } from "./components/banner/Banner";
 import phone from "./assets/hero-img/galaxy-z-flip6.png";
+import { Products } from "./components/products/Products";
 
 const bannerData = {
   discount: "30% OFF",
@@ -30,6 +31,7 @@ function App() {
       <Category2 />
       <Services />
       <Banner data={bannerData} />
+      <Products />
       {/* <Footer /> */}
     </div>
   );

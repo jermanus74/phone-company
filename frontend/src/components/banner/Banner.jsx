@@ -29,15 +29,26 @@ export const Banner = ({ data }) => {
           <div className="h-full flex items-center">
             <img
               src={data.image}
-              className="scale-120 w-[250px] md:w-[350px] mx-auto 
+              className="scale-120 w-[350px] md:w-[350px] mx-auto 
               drop-shadow-2xl object-cover "
             />
           </div>
           {/* third col */}
-          <div>
-            <p>{data.title2}</p>
-            <p>{data.title3}</p>
-            <p>{data.title4}</p>
+          <div className="flex flex-col justify-center gap-4 p-6 ">
+            <p className=" font-bold text-xl ">{data.title2}</p>
+            <p className=" text-3xl sm:text-6xl font-bold ">
+              {""}
+              {data.title3}
+            </p>
+            <p className="text-sm  tracking-wide leading-5s">{data.title4}</p>
+            <div>
+              <button
+                style={{ color: data.bgColor }}
+                className="bg-white text-brandBlue py-2 px-4 capitalize font-semibold rounded-full "
+              >
+                shop now
+              </button>
+            </div>
           </div>
         </div>
       </div>
