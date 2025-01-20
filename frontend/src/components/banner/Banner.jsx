@@ -30,10 +30,15 @@ export const Banner = ({ data }) => {
             <img
               src={data.image}
               className="scale-120 w-[250px] md:w-[350px] mx-auto 
-              drop-shadow-2xl object-cover  "
+              drop-shadow-2xl object-cover "
             />
           </div>
           {/* third col */}
+          <div>
+            <p>{data.title2}</p>
+            <p>{data.title3}</p>
+            <p>{data.title4}</p>
+          </div>
         </div>
       </div>
     </div>
