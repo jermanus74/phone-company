@@ -47,7 +47,6 @@ function App() {
       <Banner data={bannerData2} />
       <Blog />
       <Partner />
-
       <Footer />
     </div>
   );
