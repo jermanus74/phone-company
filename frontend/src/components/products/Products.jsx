@@ -44,6 +44,7 @@ export const Products = () => {
         <Heading title="Our Products" subtitle="VIew our products" />
         {/* card section */}
         <ProductCard data={productsData} />
+        <ProductCard data={productsData} />
       </div>
     </div>
   );
