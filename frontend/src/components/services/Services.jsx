@@ -26,7 +26,7 @@ export const Services = () => {
              text-primary"
         />
       ),
-      title: "Safe Money",
+      title: "Assured Quality",
       description: "30 Days Money Back",
     },
     {
@@ -37,7 +37,7 @@ export const Services = () => {
              text-primary"
         />
       ),
-      title: "Secure ",
+      title: "Advanced feature",
       description: "All Payment Secure",
     },
     {

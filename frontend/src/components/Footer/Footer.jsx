@@ -16,7 +16,7 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="footer dark:bg-gray-950">
+    <div className="footer dark:bg-gray-950 text-white">
       <div className="container">
         <div className="grid md:grid-cols-5 pb-20 pt-5">
           {/* Company details */}
@@ -36,7 +36,7 @@ export const Footer = () => {
           {/* Footer links */}
           <div className="footer-links col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-5">
             {/* First set of links */}
-            <div className="footer-link-group py-8 px-4 w-max">
+            <div className="footer-link-group py-8 px-4 mr-40 w-max">
               <h1 className="footer-link-title">Important Links</h1>
               <ul className="footer-link-list">
                 {FooterLinks.map((data, index) => (
@@ -50,8 +50,8 @@ export const Footer = () => {
             </div>
 
             {/* Second set of links */}
-            <div className="footer-link-group ml-14 py-8 px-4 w-max">
-              <h1 className="footer-link-title">Important Links</h1>
+            <div className="footer-link-group  py-8 space-x-5 px-4 w-max">
+              <h1 className="footer-link-title m-5">Important Links</h1>
               <ul className="footer-link-list">
                 {FooterLinks.map((data, index) => (
                   <li key={index}>
@@ -65,7 +65,7 @@ export const Footer = () => {
 
             {/* Company address and social links */}
             <div className="footer-contact ml-40 py-8 px-4 col-span-2 sm:col-auto w-max">
-              <div>
+              <div className="">
                 <div className="contact-item">
                   <FaLocationArrow />
                   <p>Mbezi, Dar-es-Salaam, Tanzania</p>

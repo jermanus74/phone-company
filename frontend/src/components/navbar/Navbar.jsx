@@ -1,30 +1,29 @@
-// import "./css/Navbar.css";
 import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./DarkMode";
 
 // menu array
 const MenuLinks = [
-  { id: 1, link: "#", name: "Home" },
-  { id: 2, link: "#", name: "Shop" },
-  { id: 3, link: "#", name: "About" },
-  { id: 4, link: "#", name: "Blogs" },
+  { id: 1, link: "/", name: "Home" },
+  { id: 2, link: "/shop", name: "Shop" },
+  { id: 3, link: "/about", name: "About" },
+  { id: 4, link: "/blog", name: "Blogs" },
 ];
 const DropdownLinks = [
   {
     id: 1,
     name: "Trending Products",
-    link: "/#",
+    link: "/shop",
   },
   {
     id: 2,
     name: "Best Selling",
-    link: "/#",
+    link: "/shop",
   },
   {
     id: 3,
     name: "Top Rated",
-    link: "/#",
+    link: "/shop",
   },
 ];
 export const Navbar = () => {
@@ -33,7 +32,7 @@ export const Navbar = () => {
       <div className="py-4">
         <div className="container flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <a href="#" className="logo">
+            <a href="/" className="logo">
               samsung
             </a>
             <div className="hidden lg:block">

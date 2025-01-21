@@ -49,7 +49,7 @@ export const Blog = () => {
         >
           {BlogData.map((data) => (
             <div
-              className="bg-white dark:bg-gray-900 p-3 rounded-md"
+              className="bg-white dark:bg-gray-900 dark:text-white p-3 rounded-md"
               key={data.title}
             >
               {/* img */}

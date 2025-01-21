@@ -4,7 +4,7 @@ import Image2 from "../../assets/hero-img/Image2.png";
 import Image3 from "../../assets/hero-img/galaxy-z-flip6.png";
 import Image4 from "../../assets/hero-img/img4.webp";
 import Image5 from "../../assets/hero-img/A-series.webp";
-import Image6 from "../../assets/hero-img/camera.jpg";
+// import Image6 from "../../assets/hero-img/camera.jpg";
 import { Button } from "../shared/Button";
 
 export const Hero = () => {
@@ -46,7 +46,7 @@ export const Hero = () => {
     },
     {
       id: 6,
-      img: Image6,
+      img: Image3,
       subtitle: "New feature",
       title: "Enjoy the pixels",
       title2: "Aicamera",

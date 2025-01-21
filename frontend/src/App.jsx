@@ -1,53 +1,22 @@
-// import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
-import { Navbar } from "./components/navbar/Navbar";
-import { Category } from "./components/categories/Category";
-import { Category2 } from "./components/categories/Category2";
-import { Services } from "./components/services/Services";
-import { Banner } from "./components/banner/Banner";
-import phone from "./assets/hero-img/galaxy-z-flip6.png";
-import { Products } from "./components/products/Products";
-import { Blog } from "./components/blog/Blog";
-import { Partner } from "./components/partner/Partner";
-import { Hero } from "./components/hero/Hero";
-import { Footer } from "./components/Footer/Footer";
 
-const bannerData = {
-  discount: "30% OFF",
-  title: "Fine Picture",
-  date: "17 Jan to 29 Jan",
-  image: phone,
-  title2: "Super 5G Smartphone",
-  title3: "Winter Sale",
-  title4:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dignissimos.",
-  bgColor: "#1376f4",
-};
-const bannerData2 = {
-  discount: "30% OFF",
-  title: "Fine Picture",
-  date: "17 Jan to 29 Jan",
-  image: phone,
-  title2: "Super 5G Smartphone",
-  title3: "Winter Sale",
-  title4:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dignissimos.",
-  bgColor: "#2dcc6f",
-};
+import { Home } from "./pages/Home";
+import { Shop } from "./pages/Shop";
+import { Blogs } from "./pages/Blogs";
+import { About } from "./pages/About";
+
 function App() {
   return (
-    <div className="custom-container">
-      <Navbar />
-      <Hero />
-      <Category />
-      <Category2 />
-      <Services />
-      <Banner data={bannerData} />
-      <Products />
-      <Banner data={bannerData2} />
-      <Blog />
-      <Partner />
-      <Footer />
+    <div className="custom-container dark:bg-gray-700 dark:text-white">
+      <BrowserRouter>
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/blog" element={<Blogs />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -6,8 +6,8 @@ import brand5 from "../../assets/brand/br-5.png";
 
 export const Partner = () => {
   return (
-    <div className="partner-container">
-      <div className="partner-wrapper">
+    <div className=" bg-gray-600 py-4 ">
+      <div className="partner-wrapper container">
         <div className="partner-grid">
           <img src={brand1} className="partner-logo" alt="Brand 1" />
           <img src={brand2} className="partner-logo" alt="Brand 2" />
