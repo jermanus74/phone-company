@@ -26,6 +26,7 @@ const DropdownLinks = [
     link: "/shop",
   },
 ];
+
 export const Navbar = () => {
   return (
     <div className="navbar dark:bg-gray-900 dark:text-white duration-400 relative z-40">
@@ -66,7 +67,9 @@ export const Navbar = () => {
             </div>
             <button className="cart-btn">
               <FaShoppingCart />
-              <div className="cart-count">4</div>
+              <div className="cart-count" id="count">
+                0
+              </div>
             </button>
             <DarkMode />
           </div>
